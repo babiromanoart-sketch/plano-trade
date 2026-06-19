@@ -16,4 +16,227 @@ body {
 .wrap { max-width: 540px; margin: 0 auto; }
 .eyebrow { text-align: center; font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: #C9A84C; margin-bottom: 8px; }
 h1 { text-align: center; font-size: 26px; font-weight: 700; color: #C9A84C; letter-spacing: -0.01em; margin-bottom: 6px; }
-.sub { text-align: center; font-size: 13px;
+.sub { text-align: center; font-size: 13px; color: #94A3B8; margin-bottom: 28px; }
+.card { background: #10131A; border: 1px solid #1F2535; border-radius: 14px; padding: 20px; margin-bottom: 16px; }
+.card-dark { background: #161B25; border: 1px solid #1F2535; border-radius: 14px; padding: 20px; margin-bottom: 16px; }
+.label { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #94A3B8; margin-bottom: 12px; }
+.input-row { display: flex; align-items: center; gap: 10px; }
+.prefix { font-size: 22px; font-weight: 700; color: #C9A84C; }
+#balInput { background: #161B25; border: 2px solid #1F2535; border-radius: 10px; color: #fff; font-size: 24px; font-weight: 700; padding: 10px 14px; width: 150px; outline: none; -moz-appearance: textfield; }
+#balInput::-webkit-inner-spin-button, #balInput::-webkit-outer-spin-button { -webkit-appearance: none; }
+#balInput:focus { border-color: #C9A84C; }
+#applyBtn { background: #C9A84C; color: #000; border: none; border-radius: 10px; font-size: 15px; font-weight: 700; padding: 12px 24px; cursor: pointer; flex-shrink: 0; -webkit-tap-highlight-color: transparent; }
+#applyBtn:active { opacity: 0.8; }
+.big-num { font-size: 40px; font-weight: 700; color: #E8C96A; letter-spacing: -0.02em; }
+.overall-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px; }
+.meta-txt { font-size: 13px; color: #94A3B8; }
+.bar-track { height: 20px; background: #0D1018; border-radius: 4px; border: 1px solid #2A3040; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, #8B6A28, #C9A84C, #E8C96A); position: relative; transition: width 0.5s ease; }
+.bar-pct { font-size: 11px; color: #94A3B8; text-align: right; margin-top: 5px; }
+.bar-labels { display: flex; justify-content: space-between; font-size: 11px; color: #4A5568; margin-bottom: 5px; }
+.phase-card { background: #161B25; border: 1px solid #1F2535; border-radius: 14px; padding: 20px; margin-bottom: 16px; position: relative; overflow: hidden; transition: border-color 0.3s, opacity 0.3s; }
+.phase-top-bar { position: absolute; top: 0; left: 0; right: 0; height: 2px; }
+.phase-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 14px; gap: 8px; }
+.phase-title { font-size: 16px; font-weight: 700; color: #fff; }
+.phase-range { font-size: 12px; color: #C9A84C; margin-top: 3px; }
+.badge { font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 3px 10px; border-radius: 20px; flex-shrink: 0; white-space: nowrap; }
+.grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+.block { background: rgba(255,255,255,0.03); border: 1px solid #1F2535; border-radius: 8px; padding: 10px 12px; }
+.block-lbl { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: #4A5568; margin-bottom: 7px; }
+.block-row { display: flex; justify-content: space-between; align-items: baseline; font-size: 12px; margin-bottom: 3px; }
+.block-row:last-child { margin-bottom: 0; }
+.bk { color: #94A3B8; } .bv { font-weight: 600; font-size: 13px; }
+.gold { color: #C9A84C; } .green { color: #22C55E; } .red { color: #EF4444; } .muted { color: #4A5568; }
+.saque-row { display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #1F2535; }
+.saque-row:last-child { border-bottom: none; }
+.sr-range { font-size: 13px; font-weight: 600; color: #E2E8F0; min-width: 105px; }
+.sr-action { font-size: 12px; color: #94A3B8; flex: 1; }
+.sr-pct { font-size: 14px; font-weight: 700; min-width: 36px; text-align: right; }
+.gold-box { background: linear-gradient(135deg, rgba(201,168,76,0.07), rgba(201,168,76,0.02)); border: 1px solid #8B6A28; border-radius: 14px; padding: 20px; margin-bottom: 16px; }
+.gold-title { font-size: 13px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C9A84C; margin-bottom: 12px; }
+.rule-line { display: flex; gap: 8px; font-size: 13px; color: #94A3B8; margin-bottom: 6px; }
+.rule-line.yes { color: #E2E8F0; font-weight: 500; }
+.hr { border: none; border-top: 1px solid #1F2535; margin: 12px 0; }
+.rule-sub { font-size: 13px; color: #94A3B8; margin-bottom: 8px; }
+.tl-row { display: flex; gap: 14px; align-items: flex-start; position: relative; }
+.tl-row:not(:last-child)::before { content: ''; position: absolute; left: 4px; top: 18px; bottom: -4px; width: 1px; background: #1F2535; }
+.tl-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; margin-top: 3px; position: relative; z-index: 1; transition: all 0.3s; }
+.tl-content { flex: 1; padding-bottom: 20px; }
+.tl-content:last-child { padding-bottom: 0; }
+.tl-date { font-size: 11px; font-weight: 600; color: #4A5568; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 2px; }
+.tl-val { font-size: 20px; font-weight: 700; color: #fff; letter-spacing: -0.02em; }
+.tl-val.now { color: #E8C96A; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">XAUUSD · M15 · Plano de Crescimento</div>
+  <h1>Jornada dos $150 → $5.000</h1>
+  <div class="sub">Atualize seu saldo e acompanhe cada fase</div>
+  <div class="card">
+    <div class="label">Saldo atual</div>
+    <div class="input-row">
+      <span class="prefix">$</span>
+      <input type="number" id="balInput" value="250" inputmode="decimal" min="0">
+      <button id="applyBtn" onclick="update(); return false;">Definir</button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="label">Progresso geral — até $5.000</div>
+    <div class="overall-row">
+      <span class="big-num" id="dispBal">$250</span>
+      <span class="meta-txt">Meta: $5.000</span>
+    </div>
+    <div class="bar-track"><div class="bar-fill" id="overallFill" style="width:2%"></div></div>
+    <div class="bar-pct" id="overallPct">2% concluído</div>
+  </div>
+  <div class="phase-card" id="ph1">
+    <div class="phase-top-bar" id="top1"></div>
+    <div class="phase-header">
+      <div><div class="phase-title">Fase 1 — Consistência</div><div class="phase-range">$150 → $1.000</div></div>
+      <span class="badge" id="badge1" style="background:rgba(201,168,76,0.15);color:#C9A84C;border:1px solid #8B6A28">Ativa</span>
+    </div>
+    <div class="grid2">
+      <div class="block">
+        <div class="block-lbl">Lotes</div>
+        <div class="block-row"><span class="bk">Padrão</span><span class="bv gold">0,03</span></div>
+        <div class="block-row"><span class="bk">Bom setup</span><span class="bv gold">0,05</span></div>
+        <div class="block-row"><span class="bk">Excepcional</span><span class="bv gold">0,07</span></div>
+      </div>
+      <div class="block">
+        <div class="block-lbl">Limites diários</div>
+        <div class="block-row"><span class="bk">Stop</span><span class="bv red">−$20</span></div>
+        <div class="block-row"><span class="bk">Meta</span><span class="bv green">+$30–$50</span></div>
+        <div class="block-row"><span class="bk">Semanal</span><span class="bv green">+$150–$250</span></div>
+      </div>
+    </div>
+    <div class="bar-labels"><span>$150</span><span id="c1">$250</span><span>$1.000</span></div>
+    <div class="bar-track"><div class="bar-fill" id="f1" style="width:12%"></div></div>
+    <div class="bar-pct" id="p1">12% desta fase</div>
+  </div>
+  <div class="phase-card" id="ph2" style="opacity:0.4">
+    <div class="phase-top-bar" id="top2"></div>
+    <div class="phase-header">
+      <div><div class="phase-title">Fase 2 — Escala</div><div class="phase-range">$1.000 → $2.500</div></div>
+      <span class="badge" id="badge2" style="background:rgba(74,85,104,0.15);color:#4A5568;border:1px solid #1F2535">Bloqueada</span>
+    </div>
+    <div class="grid2">
+      <div class="block">
+        <div class="block-lbl">Lotes</div>
+        <div class="block-row"><span class="bk">Padrão</span><span class="bv gold">0,05</span></div>
+        <div class="block-row"><span class="bk">Bom setup</span><span class="bv gold">0,07</span></div>
+        <div class="block-row"><span class="bk">Excelente</span><span class="bv gold">0,10</span></div>
+      </div>
+      <div class="block">
+        <div class="block-lbl">Limites diários</div>
+        <div class="block-row"><span class="bk">Stop</span><span class="bv red">−$40</span></div>
+        <div class="block-row"><span class="bk">Meta</span><span class="bv green">+$50–$100</span></div>
+        <div class="block-row"><span class="bk">Semanal</span><span class="bv green">+$260</span></div>
+      </div>
+    </div>
+    <div class="bar-labels"><span>$1.000</span><span id="c2">—</span><span>$2.500</span></div>
+    <div class="bar-track"><div class="bar-fill" id="f2" style="width:0%"></div></div>
+    <div class="bar-pct" id="p2">0% desta fase</div>
+  </div>
+  <div class="phase-card" id="ph3" style="opacity:0.4">
+    <div class="phase-top-bar" id="top3"></div>
+    <div class="phase-header">
+      <div><div class="phase-title">Fase 3 — Preservação</div><div class="phase-range">$2.500 → $5.000</div></div>
+      <span class="badge" id="badge3" style="background:rgba(74,85,104,0.15);color:#4A5568;border:1px solid #1F2535">Bloqueada</span>
+    </div>
+    <div class="grid2">
+      <div class="block">
+        <div class="block-lbl">Lotes</div>
+        <div class="block-row"><span class="bk">Padrão</span><span class="bv gold">0,10</span></div>
+        <div class="block-row"><span class="bk">Bom setup</span><span class="bv gold">0,15</span></div>
+        <div class="block-row"><span class="bk">Excelente</span><span class="bv gold">0,20</span></div>
+      </div>
+      <div class="block">
+        <div class="block-lbl">Limites diários</div>
+        <div class="block-row"><span class="bk">Stop</span><span class="bv red">−$75</span></div>
+        <div class="block-row"><span class="bk">Meta</span><span class="bv green">+$100–$250</span></div>
+        <div class="block-row"><span class="bk">Foco</span><span class="bv">Preservar capital</span></div>
+      </div>
+    </div>
+    <div class="bar-labels"><span>$2.500</span><span id="c3">—</span><span>$5.000</span></div>
+    <div class="bar-track"><div class="bar-fill" id="f3" style="width:0%"></div></div>
+    <div class="bar-pct" id="p3">0% desta fase</div>
+  </div>
+  <div class="card-dark">
+    <div class="label">Regra dos Saques</div>
+    <div class="saque-row"><div class="sr-range">Até $1.000</div><div class="sr-action">Reinvestir tudo</div><div class="sr-pct muted">0%</div></div>
+    <div class="saque-row"><div class="sr-range">$1.000–$2.500</div><div class="sr-action">Sacar parte dos lucros</div><div class="sr-pct gold">20%</div></div>
+    <div class="saque-row"><div class="sr-range">$2.500–$5.000</div><div class="sr-action">Aumentar retirada</div><div class="sr-pct gold">30%</div></div>
+    <div class="saque-row"><div class="sr-range">Acima de $5.000</div><div class="sr-action">Colher os frutos</div><div class="sr-pct gold">50%</div></div>
+  </div>
+  <div class="gold-box">
+    <div class="gold-title">⬡ Regra de Ouro</div>
+    <p class="rule-sub">Nunca aumentar lote por motivo emocional:</p>
+    <div class="rule-line"><span class="red">✗</span>"Ganhei 3 seguidas"</div>
+    <div class="rule-line"><span class="red">✗</span>"Estou confiante"</div>
+    <div class="rule-line"><span class="red">✗</span>"Quero recuperar"</div>
+    <div class="hr"></div>
+    <p class="rule-sub">Aumentar lote somente quando:</p>
+    <div class="rule-line yes"><span class="green">✓</span>A conta atingiu a próxima faixa de capital</div>
+  </div>
+  <div class="card-dark">
+    <div class="label">Cenário Projetado</div>
+    <div class="tl-row">
+      <div class="tl-dot" style="background:#C9A84C;border:2px solid #E8C96A;box-shadow:0 0 6px #C9A84C"></div>
+      <div class="tl-content"><div class="tl-date">Jun 2026 — Agora</div><div class="tl-val now" id="tlNow">$250</div></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-dot" id="tl1" style="background:#1F2535;border:2px solid #4A5568"></div>
+      <div class="tl-content"><div class="tl-date">Agosto 2026</div><div class="tl-val">~$1.000</div></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-dot" id="tl2" style="background:#1F2535;border:2px solid #4A5568"></div>
+      <div class="tl-content"><div class="tl-date">Outubro 2026</div><div class="tl-val">~$2.500</div></div>
+    </div>
+    <div class="tl-row">
+      <div class="tl-dot" id="tl3" style="background:#1F2535;border:2px solid #4A5568"></div>
+      <div class="tl-content" style="padding-bottom:0"><div class="tl-date">Início de 2027</div><div class="tl-val">~$5.000</div></div>
+    </div>
+  </div>
+</div>
+<script>
+var START = 150, GOAL = 5000;
+function clamp(v,a,b){ return Math.max(a,Math.min(b,v)); }
+function pct(v,a,b){ return clamp((v-a)/(b-a)*100,0,100); }
+function fmt(n){ return '$'+Math.round(n).toLocaleString('pt-BR'); }
+function update() {
+  var raw = parseFloat(document.getElementById('balInput').value);
+  if (isNaN(raw) || raw < 0) raw = 0;
+  var bal = raw;
+  document.getElementById('dispBal').textContent = fmt(bal);
+  document.getElementById('tlNow').textContent = fmt(bal);
+  var op = pct(bal, START, GOAL);
+  document.getElementById('overallFill').style.width = Math.max(op,0.3)+'%';
+  document.getElementById('overallPct').textContent = op.toFixed(1)+'% concluído';
+  var phases = [{n:1,start:150,end:1000},{n:2,start:1000,end:2500},{n:3,start:2500,end:5000}];
+  phases.forEach(function(ph) {
+    var n=ph.n, card=document.getElementById('ph'+n), fill=document.getElementById('f'+n);
+    var pctEl=document.getElementById('p'+n), curEl=document.getElementById('c'+n);
+    var badge=document.getElementById('badge'+n), top=document.getElementById('top'+n);
+    if (bal >= ph.end) {
+      card.style.borderColor='#22C55E'; card.style.opacity='0.8'; top.style.background='#22C55E';
+      fill.style.width='100%'; pctEl.textContent='✓ Fase concluída'; curEl.textContent=fmt(ph.end);
+      badge.textContent='Concluída ✓'; badge.style.background='rgba(34,197,94,0.12)'; badge.style.color='#22C55E'; badge.style.border='1px solid rgba(34,197,94,0.3)';
+    } else if (bal >= ph.start) {
+      card.style.borderColor='#C9A84C'; card.style.opacity='1'; top.style.background='linear-gradient(90deg,#8B6A28,#E8C96A,#8B6A28)';
+      var p=pct(bal,ph.start,ph.end); fill.style.width=Math.max(p,0.3)+'%';
+      pctEl.textContent=p.toFixed(1)+'% desta fase'; curEl.textContent=fmt(bal);
+      badge.textContent='Ativa'; badge.style.background='rgba(201,168,76,0.15)'; badge.style.color='#C9A84C'; badge.style.border='1px solid #8B6A28';
+    } else {
+      card.style.borderColor='#1F2535'; card.style.opacity='0.4'; top.style.background='transparent';
+      fill.style.width='0%'; pctEl.textContent='0% desta fase'; curEl.textContent='—';
+      badge.textContent='Bloqueada'; badge.style.background='rgba(74,85,104,0.15)'; badge.style.color='#4A5568'; badge.style.border='1px solid #1F2535';
+    }
+  });
+  function setDot(id,r){ var d=document.getElementById(id); d.style.background=r?'#22C55E':'#1F2535'; d.style.border='2px solid '+(r?'#22C55E':'#4A5568'); d.style.boxShadow=r?'0 0 6px #22C55E':'none'; }
+  setDot('tl1',bal>=1000); setDot('tl2',bal>=2500); setDot('tl3',bal>=5000);
+}
+window.onload = function(){ update(); };
+</script>
+</body>
+</html>
